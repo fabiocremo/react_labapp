@@ -1,0 +1,94 @@
+@import "react-slideshow-image/dist/styles.css";
+
+.each-fade {
+    display: flex;
+    width: 100%;
+  }
+  
+  .each-fade > div {
+    width: 75%;
+  }
+  
+  .each-fade > div img {
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+    object-fit: cover;
+  }
+  
+  .each-fade p {
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 1rem;
+    text-transform: capitalize;
+    width: 36%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: #ff4920;
+  }
+  
+
+  .each-list {
+    display: none;
+    padding: 2rem;
+  }
+  
+  .each-list img {
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    max-height: 1000px;
+    object-fit: cover;
+    display: flex;
+  }
+
+  .each-list p {
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 15px;
+    max-width: 1000px;
+    max-height: 1000px;
+    padding: 1rem;
+    text-transform: capitalize;
+    width: 30%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: #ff4920;
+  }
+
+
+@media screen and (max-width: 1050px) {
+    .each-fade  {
+      display: none;
+    }
+    .slide-container {
+      display: none;
+    }
+    .each-list {
+      display: flex;
+    }
+}
+
+@media screen and (max-width: 700px) {
+  .each-list img {
+    max-width: 650px;
+    max-height: 650px;
+  }
+  .each-list p {
+    max-width: 650px;
+    max-height: 650px;
+    font-size: 8px;
+  }
+}
+
+
+
+
