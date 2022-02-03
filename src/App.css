@@ -91,3 +91,18 @@
       margin: 4rem 2rem;
     }  
   }
+
+  .cards-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    background-color: rgb(231, 228, 228);
+    overflow-x: scroll
+}
+
+.cards-list-title {
+  font-family: var(--font-family);
+  padding: 10px;
+  background-color: rgb(231, 228, 228);
+
+}
